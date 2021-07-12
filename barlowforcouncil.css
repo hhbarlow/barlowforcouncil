@@ -1,0 +1,306 @@
+body {
+    font-family: sans-serif;
+    background-color: DarkGreen;
+    color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+
+#about {
+  width: 25%;
+  display: inline;
+}
+
+#hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  color: white;
+}
+
+@media (min-width: 501px) {
+  .topnav{
+    display: none;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+section.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (max-width: 500px) {
+  section.banner{
+    display: none;
+  }
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 15px 20px 15px;
+}
+
+@media (max-width: 500px) {
+  ul.menu{
+    display: none;
+  }
+}
+
+ul.menu a:link {
+    color: white;
+    text-decoration: none;
+}
+
+ul.menu a:visited {
+    color: white;
+    text-decoration: underline;  
+}
+
+ul.menu a:hover {
+    color: LightCyan;
+    text-decoration: none;
+}
+
+ul.menu a:active {
+    color: LightCyan;
+    text-decoration: none;
+}
+
+#sierra {
+    width: 175px;
+}
+
+#facebook {
+    width: 75px;
+}
+
+@media (max-width: 500px) {
+  #facebook{
+    display: none;
+  }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+main {
+    background-color: CornSilk;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+h3 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+
+article {
+    color: black;
+    padding: 0p 20px 50px 20px;
+    width: inherit;
+    margin: 0px 0px 25px 0px;
+}
+
+article p {
+    font-size: 20px;
+    padding: 0px 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+article figure {
+    text-align: center;
+}
+
+article figcaption {
+    font-size: 17px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+article ul {
+    display: block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .slideshow-container {
+    display: none;
+  }
+}
+
+img.slide {
+  max-width: none;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+@media (max-width: 500px) {
+  .dot {
+    display: none;
+  }
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
